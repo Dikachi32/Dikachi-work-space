@@ -1,0 +1,15 @@
+print("==DIKACHI MADLIPS GAME==")
+
+name = input("Enter your name: ").strip().title()
+hobby = input("Enter your hobby: ").strip().lower()
+adjective = input("Enter your adjective: ").strip().title()
+place = input("Enter your place:  ").strip().title()
+goal = input("Enter your goal: ").strip().lower()
+
+print(f"==DIKACHI MADLIPS GAME==")
+print(f"My name is {name}, I love {hobby} especially when it comes to language.")
+print(f"Every day, I feel {adjective} when I sit down to code.")
+print(f"I currently stay in {place} i'm learning and improving my skills with the help of Prime Robotic Research Institute.")
+print(f"My dream is to {goal} using my coding knowledge.")
+print(f"No matter what happens, I will keep learning and growing!")
+print(f"Coding is not just a skill for me it's my passion!")
