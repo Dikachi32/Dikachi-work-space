@@ -73,7 +73,69 @@ name = ['Dikachi', 'Abuchi', 'Ebuka', 'Maluchi']
 # del name[0]
 # print(name)
 
-##-- Looping Through Lists
-numbers = [1, 2, 3]
-for num in numbers:
-    print(num)
+##. Looping Through Lists
+# numbers = [1, 2, 3]
+# for num in numbers:
+#     print(num)
+
+##. Loop through:
+# scores = [90, 80, 70, 60]
+# for num in scores:
+#     print(num)
+
+##. list Length
+# numbers = [1, 2, 3]
+# print(len(numbers))  # 3
+
+# Find the length of:
+# students = ["A", "B", "C", "D"]
+# print(len(students))
+
+##. Checking Items
+# fruits = ["apple", "banana"]
+
+# if "apple" in fruits:
+#     print("Yes")
+
+# # Check if "AI" exists in:
+# tech = ["ML", "DL", "AI"]
+# if 'AI' in tech:
+#     print(True)
+
+#.  Sorting Lists
+#. Sort: nums = [10, 5, 8, 2]
+#. Ascending: Descending:
+# nums = [10, 5, 8, 2]
+# nums.sort()
+# print(f"Ascending: {nums}")
+
+# nums.sort(reverse=True)
+# print(f"Descending: {nums}")
+
+# #. List Comprehension (VERY IMPORTANT ⚡)
+# # Create a list of numbers from 1–10, but only even numbers.
+# even =[x for x in range(1, 11)]
+# print(even)
+
+# #. Nested Lists (2D Lists)
+# # Create a 2D list of 2 rows and 3 columns and print one element.
+# # Create 2D list
+# matrix = [
+#     [1, 2, 3],
+#     [4, 5, 6]
+# ]
+# # Print one element (row 1, column 2 → value 2)
+# print(matrix[0][1])
+# # matrix[0][1] → first row, second column
+# # matrix[1][2] → second row, third column (which is 6)
+
+#. Copying Lists: Copy a list and modify the copy without affecting original.
+# list1 = [22, 33, 44]
+# list2 = list1.copy()
+# print(list2)
+
+#. Combining Lists: Combine:
+x = ["AI"] 
+y = ["Engineer"]
+z = x + y
+print(z)
