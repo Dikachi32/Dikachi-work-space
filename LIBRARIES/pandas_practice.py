@@ -80,9 +80,10 @@ df = pd.read_csv("student-scores.csv")
 
 ##... DATA CLEANING (MOST CRITICAL SKILL)
 # 1. Handling Missing Values
-df.isnull().sum()
-df.dropna()            # Remove missing
-df.fillna(0)           # Replace missing
+df.isnull()            # Where are the missing values
+df.isnull().sum()      # How many are missing
+df.dropna()            # Remove missing data
+df.fillna(0)           # Replace missing values
 # 2. Removing Duplicates
 df.drop_duplicates()
 # 3. Renaming Columns
@@ -112,3 +113,10 @@ df["Passed"] = df["Passed"].fillna(True)             # Replace missing Passed va
 
 print("\nCleaned Data:")
 print(df)
+
+
+##.. Different ways to add columns
+df["Passed"] = df["Score"] > 50      # It checks every row in the Score column. If the score is higher than 50, it puts True if less it puts False.
+df["DoubleScore"] = df["Score"] * 2  # It takes the value in Score for each row, multiplies it by 2, and saves the result in a new column called DoubleScore.
+df["Performance"] = df["Score"] / df["StudyHours"]  # It takes the value from the Score column and divides it by the value in the StudyHours column for every specific row.
+
